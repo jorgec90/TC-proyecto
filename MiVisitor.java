@@ -201,8 +201,8 @@ public class MiVisitor extends idBaseVisitor {
         variableAux=nomVariables;
         nomVariables++;
         int cantParametros=ctx.getChildCount()-2;
-        for(int i=3; i<cantParametros; i++){
-            codigo += "pop " + ctx.getChild(i).getChild(1).getText() + "\n";
+        for(int i=3; i<cantParametros; i+=3){
+            codigo += "pop " + ctx.getChild(1).getChild(i).getText() + "\n";
         }
 
         String ciclo="";
