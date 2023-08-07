@@ -13,7 +13,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 public class App {
     public static void main(final String[] args) throws Exception {
 
-      // Create a CharStream that reads from file jccc
+      // Create a CharStream that reads from file
       final CharStream input = CharStreams.fromFileName("al/src/main/java/com/lexer/codigo.c");
 
       // Create a lexer that feeds off of input CharStream
